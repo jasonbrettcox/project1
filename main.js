@@ -1,17 +1,49 @@
 var score;
 var cardsmatched;
 var ui = $("#gameUI");
-var uiIntro = $("#gameIntro");
+var uiIntro =$("#gameIntro");
 var uiStats = $("#gameStats");
 var uiComplete = $("#gameComplete");
-var uiCards= $("#cards");
-var uiReset = $(".gameReset");
+var uiCards = $("#cards");
 var uiScore = $(".gameScore");
+var uiReset = $(".gameReset");
 var uiPlay = $("#gamePlay");
 var uiTimer = $("#timer");
 
+var matchingGame = {};
+matchingGame.deck = ['grilledfish', 'grilledfish','barbacoa', 'barbacoa','tripa', 'tripa','bajafish', 'bajafish','carneasada', 'carneasada','carnitas', 'carnitas', 'chorizoasado','chorizoasado','shrimptaco','shrimptaco','decabeza','decabeza','alpastor', 'alpastor','dorados','dorados', 'lengua','lengua','chicharron','chicharron','sudados','sudados', 'polloasado','polloasado',];
 
+$(function(){
+    init();
+});
 
+function init() {
+                uiComplete.hide();
+                uiCards.hide();
+                playGame = false;
+                uiPlay.click(function(e){
+                    e.preventDefault();
+                    uiIntro.hide();
+                    startGame();
+                });
+
+                uiReset.click(function(e){
+                e.preventDefault();
+                uiComplete.hide();
+                reStartGame();
+            
+            });
+}
+
+function startGame(){
+        uiTimer.show();
+        uiScore.html("0 seconds");
+        uiStats.show();
+        uiCards.show();
+        score = 0;
+        cardsmatched= 0;
+
+}
 
 
 

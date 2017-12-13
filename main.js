@@ -56,15 +56,23 @@ function startGame(){
                     var pattern = matchingGame.deck.pop();
                     $(this).find(".back").addClass(pattern);
                     $(this).attr("data-pattern",pattern);
-                    
-                }
-        }
-
+                    $(this).click(selectCard);
+                });
+            timer();
+        };
 }
+ function timer(){
+     if (playGame){
+         scoreTimeout = setTimeout(function(){
+             uiScore.html(++score = "seconds");
+             timer();
+         }, 1000);
+     };
+ };
 
-
-
-
+function shuffle() {
+    return 0.5 - Math.random();
+}
 
 function selectCard(){
     if($(".card-flipped").size()> 1){
@@ -73,8 +81,50 @@ function selectCard(){
     $(this).addClass("card-flipped");
     if($(".card-flipped").size() == 2) {
         setTimeout(checkPattern, 1000);
+    };
+};
+
+function checkPattern(){
+    if (isMatchPattern()) {
+        $(".card-flipped").removeClass("card-flipped").addClass("card-removed");
+        if(document.webkitTransitionEnd){
+            $(".card-removed").bind("webkitTransitionEnd", removeTookCards);
+        }else{ 
+            removeTookCards();
+    } else {
+        $(".card-flipped").removeClass("card-flipped");
+
+        }
+
     }
+
+    function isMatchPattern(){
+        var cards = $(".card-flipped");
+        var pattern = $(cards[0]).data("pattern");
+        var anotherPattern = $(cards[1]).data("pattern");
+        return (pattern == anotherPattern);
+
     }
+
+    function removeTookCards() {
+        if (cardsmatched < 12) {
+            cardsmatched++;
+            $(".card-removed").remove();
+        }else{
+            $(".card-removed").remove();
+            uiCards.hide();
+            uiComplete.show();
+            clearTimeout(scoreTimeout);
+
+        }
+        }
+    
+function reStartGame(){
+        playGame = false;
+        uiCards.html("<div class='card'><div class='face front'></div><div class='face back'></div></div>");
+        clearTimeout(scoreTimeout);
+        matchingGame.deck = ['grilledfish', 'grilledfish','barbacoa', 'barbacoa','tripa', 'tripa','bajafish', 'bajafish','carneasada', 'carneasada','carnitas', 'carnitas', 'chorizoasado','chorizoasado','shrimptaco','shrimptaco','decabeza','decabeza','alpastor', 'alpastor','dorados','dorados', 'lengua','lengua','chicharron','chicharron','sudados','sudados', 'polloasado','polloasado',];
+        startGame();
 }
 
 

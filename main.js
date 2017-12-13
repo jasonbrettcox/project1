@@ -42,6 +42,23 @@ function startGame(){
         uiCards.show();
         score = 0;
         cardsmatched= 0;
+        if playGame == false) {
+            playGame = true;
+                matchingGame.deck.sort(shuffle);
+                for (var i=0; i<25; i++){
+                    $(".card:first-child").clone().appendTo("#cards");
+                } 
+                uiCards.children().each(function(index) {
+                    $(this).css({
+                        "left" : ($(this).width() + 20) * (index % 6),
+                        "top" : ($(this).height() + 20) * Math.floor(index / 6)
+                    });
+                    var pattern = matchingGame.deck.pop();
+                    $(this).find(".back").addClass(pattern);
+                    $(this).attr("data-pattern",pattern);
+                    
+                }
+        }
 
 }
 

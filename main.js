@@ -1,3 +1,45 @@
+var score;
+var cardsmatched;
+var ui = $("#gameUI");
+var uiIntro = $("#gameIntro");
+var uiStats = $("#gameStats");
+var uiComplete = $("#gameComplete");
+var uiCards= $("#cards");
+var uiReset = $(".gameReset");
+var uiScore = $(".gameScore");
+var uiPlay = $("#gamePlay");
+var uiTimer = $("#timer");
+
+
+
+
+
+
+
+
+function selectCard(){
+    if($(".card-flipped").size()> 1){
+        return;
+    }
+    $(this).addClass("card-flipped");
+    if($(".card-flipped").size() == 2) {
+        setTimeout(checkPattern, 1000);
+    }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 // var faces =[
 //     getImage("/images/tripa.jpg"),
 //     getImage("/images/bajafish.jpg"),
@@ -15,26 +57,3 @@
 //     getImage("/images/lengua.jpg"),
 //     getImage("/images/sudados.jpg"),
 // ]
-
-var Card = function (x, y){
-    this.x = x;
-    this.y = y;
-    width = 100;
-}
-var cards = [];
-var num_cols = 6 ;
-var num_rows = 4;
-for( var i = 0; i <num_cols; i++ ){
-   for (var j =0; j < num_rows;j ++){
-        cards.push(new Card(i * 78 + 10, j * 78 + 40))
-   }
-}
-
-Card.prototype.drawFaceDown = function(){
-    Card.setAttribute("src", "/images/cardback.jpg");
-   ("/images/cardback.jpg"), 
-//    this.x, this.y, this.width, this.width);
-};
-for (var i = 0; i < cards.length; i++) {
-    cards[i].drawFaceDown()
-};

@@ -1,0 +1,48 @@
+body {
+    text-align: center;
+    background: url(/images/tacotown-background.jpg);
+    
+    }
+    #game {
+    background: rgb(247, 219, 61);
+    padding: 5px;
+    }
+    /* Defines the 3D perspective view and dimension of each card. */
+    .card {
+    -webkit-perspective: 600;
+    width: 113px;
+    height: 150px;
+    }
+    
+    .face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-transition: all .3s;
+    -webkit-backface-visibility: hidden;
+    }
+    
+    .front {
+    background: url(/images/richguytaco.png);
+    z-index: 10;
+    }
+    .back {
+    background: url(/images/richguytaco.png);
+    -webkit-transform: rotate3d(0,1,0,-180deg);
+    z-index: 8;
+    }
+    
+    .card-flipped .front {
+        -webkit-transform: rotate3d(0,1,0,180deg);
+        z-index: 8;
+    }
+    .card-flipped .back {
+        -webkit-transform: rotate3d(0,1,0,0deg);
+        z-index: 10;
+    }
+    /* .cardAK {
+        background: url(../images/browndino1.png);
+    }
+    .cardAQ {
+        background: url(../images/browndinoa1.png);
+    } */

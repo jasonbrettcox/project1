@@ -1,9 +1,10 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang=en>
 <head>
 <meta charset='utf-8'>
-<title>tacoTown Pairs Game - for recent transplants</title>
+<title>tacoTown - for recent transplants</title>
 <link rel="stylesheet" href="css/styles.css" />
+<link rel="stylesheet" href="css/csstransition.css" />
 <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
 <script
 src="https://code.jquery.com/jquery-3.2.1.min.js"
@@ -11,22 +12,22 @@ integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 crossorigin="anonymous"></script>
 </head>
 <body>
-        <section id="gameStats">
+        <section id="gameStats"> <!-- this is the score/timer bar at the top of the page-->
         <p id="timer">Time: <span class="gameScore"></span></p>
         <p id="reset"><a class="gameReset" href="">Reset</a></p>
 </section>	
 <section id="game">
 
-                <section id="gameIntro">
-                    <p><a id="gamePlay" class="button" 	href="">Play</a></p>
+                <section id="gameIntro"> <!-- this has the start button and the win page -->
+                    <p><a id="gamePlay" class="button" 	href="">Play Taco Town</a></p>
                 </section>
     
                 <section id="gameComplete">
-                        <p id="top">Your time was <span class="gameScore"></span>.</p>
+                        <p id="top">You win, with a time of <span class="gameScore"></span>.</p>
                         <p><a class="gameReset button" href="">Play again</a></p>
                 </section>
                 
-                <div id="cards">
+                <div id="cards"> <!-- the actual cards -->
                     <div class="card">
                         <div class="face front"></div>
                         <div class="face back"></div>
@@ -34,7 +35,7 @@ crossorigin="anonymous"></script>
                 </div> <!-- #cards -->
 </section> <!-- #game -->
 
-<!-- <script src="http://code.jquery.com/jquery-1.7.min.js"></script> -->
+
 <script src="js/main.js"></script>
 <script type="text/javascript">
 

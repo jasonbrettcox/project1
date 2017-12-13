@@ -64,7 +64,7 @@ function startGame(){
  function timer(){
      if (playGame){
          scoreTimeout = setTimeout(function(){
-             uiScore.html(++score = "seconds");
+             uiScore.html(++score, "seconds");
              timer();
          }, 1000);
      };
@@ -84,19 +84,19 @@ function selectCard(){
     };
 };
 
-function checkPattern(){
-    if (isMatchPattern()) {
-        $(".card-flipped").removeClass("card-flipped").addClass("card-removed");
-        if(document.webkitTransitionEnd){
-            $(".card-removed").bind("webkitTransitionEnd", removeTookCards);
-        }else{ 
-            removeTookCards();
-    } else {
-        $(".card-flipped").removeClass("card-flipped");
-
-        }
-
-    }
+function checkPattern() {
+	if (isMatchPattern()) {
+		$(".card-flipped").removeClass("card-flipped").addClass("card-removed");
+			if(document.webkitTransitionEnd){
+				$(".card-removed").bind("webkitTransitionEnd",	removeTookCards);
+			}else{
+				removeTookCards();
+			}
+		} else {
+		$(".card-flipped").removeClass("card-flipped");
+	}
+}
+    
 
     function isMatchPattern(){
         var cards = $(".card-flipped");

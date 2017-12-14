@@ -171,9 +171,9 @@ body {
 	opacity: 0;
 }
 
-/* .grilledfish {background-image: url(/images/grilledfish.jpg); background-size: cover;}
-.barbacoa {background-image:url(/images/barbacoa.jpg);background-size: cover;} */
-/* .tripa {background-image:url(/images/tripa.jpg);background-size: cover;} */
+.grilledfish {background-image: url(/images/grilledfish.jpg); background-size: cover;}
+.barbacoa {background-image:url(/images/barbacoa.jpg);background-size: cover;} 
+.tripa {background-image:url(/images/tripa.jpg);background-size: cover;}
 .bajafish {background-image:url(/images/bajafish.jpg);background-size: cover;}
 .carneasada {background-image:url(/images/carneasada.jpg);background-size: cover;}
 .carnitas {background-image:url(/images/carnitas.jpg);background-size: cover;}
@@ -187,22 +187,3 @@ body {
 .sudados {background-image:url(/images/sudados.jpg);background-size: cover;}
 .polloasado {background-image:url(/images/polloasado.jpg);background-size: cover;}
 
-/* #linkBack a.button {
-	background: white;
-	border-radius: 5px;
-	display: block;
-	font-size: 30px;
-	margin: 30px auto 0;
-	padding: 10px;
-	width: 250px;
-	border: 3px solid #006438;
-	color:#006438;
-	text-decoration:none;
-}
-
-#linkBack a.button:hover {
-	background: #006438;
-	color:#fff;
-	text-decoration:none;
-}
-} */

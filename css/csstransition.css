@@ -1,11 +1,11 @@
 body {
     text-align: center;
-    background: url(/images/tacotown-background.jpg);
+    background: url(/images/taco-background.png);
     
     }
     #game {
-    background: rgb(247, 219, 61);
-    padding: 5px;
+    /* background: rgb(247, 219, 61); */
+    padding: 20px;
     }
     /* Defines the 3D perspective view and dimension of each card. */
     .card {
@@ -23,11 +23,13 @@ body {
     }
     
     .front {
-    background: url(/images/richguytaco.png);
+        background: lime;
+    /* background: url(/images/richguytaco.png); */
     z-index: 10;
     }
     .back {
-    background: url(/images/richguytaco.png);
+        background: lime;
+    /* background: url(/images/richguytaco.png); */
     -webkit-transform: rotate3d(0,1,0,-180deg);
     z-index: 8;
     }

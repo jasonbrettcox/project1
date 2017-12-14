@@ -50,8 +50,8 @@ body {
 
 #game {
 	background: #000000;
-	width: 760px;
-	height: 470px;
+	width: 780px;
+	height: 660px;
 	margin: 0 auto;
 	display: block;
 	-moz-box-shadow: 0px 3px 12px #000;
@@ -60,7 +60,7 @@ body {
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
 	border-radius: 4px;
-	padding: 20px;
+	padding: 30px;
 }
 
 #cards {
@@ -82,7 +82,7 @@ body {
 }
 
 #gameIntro {
-	background:url(/images/tacotown-startpage.jpg) top left no-repeat;
+	background:url(/images/taco-background.png) top left no-repeat contain;
 	padding: 80px 0;
 	text-align: center;
 	height: 330px;
@@ -96,13 +96,13 @@ body {
 	margin: 230px auto 0;
 	padding: 10px;
 	width: 150px;
-	border: 3px solid #006438;
-	color:#006438;
+	border: 3px solid #f55d05;
+	color:#f05006;
 	text-decoration:none;
 }
 
 #gameIntro a.button:hover {
-	background: #006438;
+	background: #f14e03;
 	color:#fff;
 	text-decoration:none;
 }
@@ -123,15 +123,15 @@ body {
 	margin: 50px auto 0;
 	padding: 10px;
 	width: 150px;
-	border: 5px solid #006438;
-	color:#006438;
+	border: 5px solid #f14e03;
+	color:#f14e03;
 	text-decoration:none;
 }
 
 #gameComplete p#top {
 	margin: 200px 0 0;
 	font-size: 20px;
-	color:#006438;
+	color:#f14e03;
 }
 
 .face {
@@ -144,11 +144,15 @@ body {
 }
 
 .front {
-	background: url(/images/richguytaco.jpg) 0 -146px;
+	/* background-color: lime; */
+	background: url(/images/richguytaco.png) no-repeat; /* 0 -146px;*/
+	background-size: contain;
 	z-index: 10;
 }
 .back {
-	background: #efefef url(/images/richguytaco.png);
+	
+	background-image: url(/images/polloasado.jpg);  
+	background-size: cover;
 	-webkit-transform: rotate3d(0,1,0,-180deg);
 	z-index: 8;
 }
@@ -167,21 +171,21 @@ body {
 	opacity: 0;
 }
 
-.grilledfish {background:url(/images/grilledfish.jpg)}
-.barbacoa {background:url(/images/barbacoa.jpg)}
-.tripa {background:url(/images/tripa.jpg)}
-.bajafish {background:url(/images/bajafish.jpg)}
-.carneasada {background:url(/images/carneasada.jpg)}
-.carnitas {background:url(/images/carnitas.jpg)}
-.chorizoasado {background:url(/images/chorizoasado.jpg)}
-.shrimptaco {background:url(/images/shrimptaco.jpg)}
-.decabeza {background:url(/images/decabeza.jpg)}
-.alpastor {background:url(/images/alpastor.jpg)}
-.dorados {background:url(/images/dorados.jpg)}
-.lengua {background:url(/images/lengua.jpg)}
-.chicharron {background:url(/images/chicharron.jpg)}
-.sudados {background:url(/images/sudados.jpg)}
-.polloasado {background:url(/images/polloasado.jpg)}
+/* .grilledfish {background-image: url(/images/grilledfish.jpg); background-size: cover;}
+.barbacoa {background-image:url(/images/barbacoa.jpg);background-size: cover;} */
+/* .tripa {background-image:url(/images/tripa.jpg);background-size: cover;} */
+.bajafish {background-image:url(/images/bajafish.jpg);background-size: cover;}
+.carneasada {background-image:url(/images/carneasada.jpg);background-size: cover;}
+.carnitas {background-image:url(/images/carnitas.jpg);background-size: cover;}
+.chorizoasado {background-image:url(/images/chorizoasado.jpg);background-size: cover;}
+.shrimptaco {background-image:url(/images/shrimptaco.jpg);background-size: cover;}
+.decabeza {background-image:url(/images/decabeza.jpg);background-size: cover;}
+.alpastor {background-image:url(/images/alpastor.jpg);background-size: cover;}
+.dorados {background-image:url(/images/dorados.jpg);background-size: cover;}
+.lengua {background-image:url(/images/lengua.jpg);background-size: cover;}
+.chicharron {background-image:url(/images/chicharron.jpg);background-size: cover;}
+.sudados {background-image:url(/images/sudados.jpg);background-size: cover;}
+.polloasado {background-image:url(/images/polloasado.jpg);background-size: cover;}
 
 /* #linkBack a.button {
 	background: white;

@@ -11,7 +11,7 @@ var uiPlay = $("#gamePlay");
 var uiTimer = $("#timer");
 
 var matchingGame = {};
-matchingGame.deck = ['grilledfish', 'grilledfish','barbacoa', 'barbacoa','tripa', 'tripa','bajafish', 'bajafish','carneasada', 'carneasada','carnitas', 'carnitas', 'chorizoasado','chorizoasado','shrimptaco','shrimptaco','decabeza','decabeza','alpastor', 'alpastor','dorados','dorados', 'lengua','lengua','chicharron','chicharron','sudados','sudados', 'polloasado','polloasado',];
+matchingGame.deck = [/*'grilledfish', 'grilledfish','barbacoa', 'barbacoa','tripa', 'tripa'*/,'bajafish', 'bajafish','carneasada', 'carneasada','carnitas', 'carnitas', 'chorizoasado','chorizoasado','shrimptaco','shrimptaco','decabeza','decabeza','alpastor', 'alpastor','dorados','dorados', 'lengua','lengua','chicharron','chicharron','sudados','sudados', 'polloasado','polloasado',];
 
 $(function(){
     init();
@@ -45,8 +45,9 @@ function startGame(){
         if (playGame == false) {
             playGame = true;
                 matchingGame.deck.sort(shuffle);
-                for (var i=0; i<25; i++){
+                for (var i=0; i<23; i++){
                     $(".card:first-child").clone().appendTo("#cards");
+                    console.log ($(".card:first-child"));
                 } 
                 uiCards.children().each(function(index) {
                     $(this).css({
@@ -75,7 +76,7 @@ function shuffle() {
 }
 
 function selectCard(){
-    if($(".card-flipped").size()> 1){
+    if($(".card-flipped").size() > 1) {
         return;
     }
     $(this).addClass("card-flipped");
@@ -123,7 +124,7 @@ function reStartGame(){
         playGame = false;
         uiCards.html("<div class='card'><div class='face front'></div><div class='face back'></div></div>");
         clearTimeout(scoreTimeout);
-        matchingGame.deck = ['grilledfish', 'grilledfish','barbacoa', 'barbacoa','tripa', 'tripa','bajafish', 'bajafish','carneasada', 'carneasada','carnitas', 'carnitas', 'chorizoasado','chorizoasado','shrimptaco','shrimptaco','decabeza','decabeza','alpastor', 'alpastor','dorados','dorados', 'lengua','lengua','chicharron','chicharron','sudados','sudados', 'polloasado','polloasado',];
+        matchingGame.deck = [/*'grilledfish', 'grilledfish','barbacoa', 'barbacoa','tripa', 'tripa',*/'bajafish', 'bajafish','carneasada', 'carneasada','carnitas', 'carnitas', 'chorizoasado','chorizoasado','shrimptaco','shrimptaco','decabeza','decabeza','alpastor', 'alpastor','dorados','dorados', 'lengua','lengua','chicharron','chicharron','sudados','sudados', 'polloasado','polloasado',];
         startGame();
 }
 
@@ -139,20 +140,3 @@ function reStartGame(){
 
 
 
-// var faces =[
-//     getImage("/images/tripa.jpg"),
-//     getImage("/images/bajafish.jpg"),
-//     getImage("/images/barbacoa.jpg"),
-//     getImage("/images/carneasada.jpg"),
-//     getImage("/images/carnitas.jpg"),
-//     getImage("/images/grilledfish.jpg"),
-//     getImage("/images/polloasado.jpg"),
-//     getImage("/images/dorados.jpg"),
-//     getImage("/images/shrimptaco.jpg"),
-//     getImage("/images/decabeza.jpg"),
-//     getImage("/images/alpastor.jpg"),
-//     getImage("/images/chorizoasado.jpg"),
-//     getImage("/images/chicharron.jpg:"),
-//     getImage("/images/lengua.jpg"),
-//     getImage("/images/sudados.jpg"),
-// ]

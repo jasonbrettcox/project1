@@ -11,7 +11,7 @@ var uiPlay = $("#gamePlay");
 var uiTimer = $("#timer");
 
 var matchingGame = {};
-matchingGame.deck = ['grilledfish', 'grilledfish','tripa', 'tripa','bajafish', 'bajafish','barbacoa', 'barbacoa','carneasada', 'carneasada','carnitas', 'carnitas', 'chorizoasado','chorizoasado','shrimptaco','shrimptaco','decabeza','decabeza','alpastor', 'alpastor','dorados','dorados', /*'lengua','lengua','chicharron','chicharron','sudados','sudados', 'polloasado','polloasado',*/];
+matchingGame.deck = ['nopales', 'nopales','grilledfish', 'grilledfish','tripa', 'tripa','bajafish', 'bajafish','barbacoa', 'barbacoa','carneasada', 'carneasada','carnitas', 'carnitas', 'chorizoasado','chorizoasado','shrimptaco','shrimptaco','decabeza','decabeza','alpastor', 'alpastor','dorados','dorados', /*'lengua','lengua','chicharron','chicharron','sudados','sudados', 'polloasado','polloasado',*/];
 
 $(function(){
     init();
@@ -124,7 +124,7 @@ function reStartGame(){
         playGame = false;
         uiCards.html("<div class='card'><div class='face front'></div><div class='face back'></div></div>");
         clearTimeout(scoreTimeout);
-        matchingGame.deck = ['grilledfish', 'grilledfish','tripa', 'tripa','bajafish', 'bajafish', 'barbacoa', 'barbacoa','carneasada','carneasada','carnitas', 'carnitas', 'chorizoasado','chorizoasado','shrimptaco','shrimptaco','decabeza','decabeza','alpastor', 'alpastor','dorados','dorados', /*'lengua','lengua','chicharron','chicharron','sudados','sudados', 'polloasado','polloasado',*/];
+        matchingGame.deck = ['nopales', 'noplaes', 'grilledfish', 'grilledfish','tripa', 'tripa','bajafish', 'bajafish', 'barbacoa', 'barbacoa','carneasada','carneasada','carnitas', 'carnitas', 'chorizoasado','chorizoasado','shrimptaco','shrimptaco','decabeza','decabeza','alpastor', 'alpastor','dorados','dorados', /*'lengua','lengua','chicharron','chicharron','sudados','sudados', 'polloasado','polloasado',*/];
         startGame();
 }
 

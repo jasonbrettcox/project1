@@ -188,90 +188,114 @@ body {
 .chicharron {background-image:url(/images/chicharron.jpg);background-size: cover;}
 .sudados {background-image:url(/images/sudados.jpg);background-size: cover;}
 .polloasado {background-image:url(/images/polloasado.jpg);background-size: cover;}
+.nopales {background-image:url(/images/nopales.jpg);background-size: cover;}
 
 .alpastor{
 	background-image: url(/images/alpastor.jpg);
 	background-size: cover;
-	width:300px;
 }
 .bajafish{
 	background-image: url(/images/bajafish.jpg);
 	background-size: cover;
-	width:300px;
+	
 }
 .chorizoasado{
 	background-image: url(/images/chorizoasado.jpg);
 	background-size: cover;
-	width:300px;
 }
 .grilledfish{
 	background-image: url(/images/grilledfish.jpg);
 	background-size: cover;
-	width:300px;
 }
 .tripa{
 	background-image: url(/images/tripa.jpg);
 	background-size: cover;
-	width:300px;
 }
 .barbacoa{
 	background-image: url(/images/barbacoa.jpg);
 	background-size: cover;
-	width:300px;
 }
 .carneasada{
 	background-image: url(/images/carneasada.jpg);
-	background-size: cover;
-	width:300px;
+	background-size: cover
 }
 .carnitas{
 	background-image: url(/images/carnitas.jpg);
 	background-size: cover;
-	width:300px;
 }
 .shrimptaco{
 	background-image: url(/images/bajafish.jpg);
 	background-size: cover;
-	width:300px;
 }
 .decabeza{
 	background-image: url(/images/decabeza.jpg);
 	background-size: cover;
-	width:300px;
 }
 .dorados{
 	background-image: url(/images/dorados.jpg);
 	background-size: cover;
-	width:300px;
 }
 .lengua{
 	background-image: url(/images/lengua.jpg);
 	background-size: cover;
-	width:300px;
 }
 .chicharron{
 	background-image: url(/images/chicharron.jpg);
 	background-size: cover;
-	width:300px;
 }
 .sudados{
 	background-image: url(/images/sudados.jpg);
 	background-size: cover;
-	width:300px;
 }
 .polloasado{
 	background-image: url(/images/polloasado.jpg);
 	background-size: cover;
-	width:300px;
+}
+.nopales{
+	background-image: url(/images/nopales.jpg);
+	background-size: cover;
 }
 .container{
 	background-image: url(/images/taco-background.png)
 	no-repeat center center fixed;
-
 }
 .jumbotron{
 	/* background-image: url(/images/taco-background.png); */
 	background-size: cover;
 	color: YELLOW;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
 
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }

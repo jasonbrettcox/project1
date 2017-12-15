@@ -17,21 +17,22 @@
     <div class = "jumbotron">
         <h1> You Won! Now go get some tacos, noob.</h1>
         <p> <h2>Click below to learn what a taco actually is and where you can get some.</h2></p>
-        <p><h4> Thank you for not driving when it's snowing.</h4></p>
+        <p><h3> Thank you for not driving when it's snowing.</h3></p>
     </div>
     <div class= "container">
         <div class="row" >
                 <div class="col-xs-3">
                         <div class="carneasada2">
                         <h2 class= "buttontext"> Carne Asada</h2>
-                        <button class="myBtn" onclick="displayElement()">Learn More</button>
-                        <div id="myModal1" class="modal">
+                        <button class="myBtn" onclick="displayElement(0)">Learn More</button>
+                        <div id="myModal" class="modal">
                                 <div class="modal-content">
-                                        <span class="close" onclick="hideElement()">&times;</span>
-                                        <h3>Carne Asada is a damn fine taco. Marinated skirt steak, typically, but sdometimes flank.
-                                            The steak should be seared a bit. Usually served topped with gucacomole, cilantro, and onions. 
-                                            Try the carne asada taco at Tacos Rapidos, which is open 24 hours. </h3>
-                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49106.308138814034!2d-105.00604002726743!3d39.71394061110346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c7f697de3a3c1%3A0x5e7c4e8c7654cf61!2sTacos+Rapidos!5e0!3m2!1sen!2sus!4v1513310908527" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                        <span class="close" onclick="hideElement(0)">&times;</span>
+                                        <h3>Carne Asada is a damn fine taco. Marinated skirt steak, typically, but sometimes flank.
+                                            The steak should be seared a bit. Usually served topped with guacamole, cilantro, and onions. 
+                                            Try the carne asada taco at Tacos Rapidos, which is open 24 hours and has several locations.
+                                            This one is an old Taco Bell and has the worst ambiance around. Get it to go.  </h3>
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49106.308138814034!2d-105.00604002726743!3d39.71394061110346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c7f697de3a3c1%3A0x5e7c4e8c7654cf61!2sTacos+Rapidos!5e0!3m2!1sen!2sus!4v1513310908527" width="600" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
 
                                             </p>
                                         </p>
@@ -42,22 +43,23 @@
                 <div class="col-xs-3">
                         <div class="grilledfish2">
                          <h2 class= "buttontext">Pescado Asado</h2>
-                         <button class="myBtn" onclick="displayElement()">Learn More</button>
-                         <div id="myModal2" class="modal">
+                         <button class="myBtn" onclick="displayElement(1)">Learn More</button>
+                         <div id="myModal" class="modal">
                                  <div class="modal-content">
-                                         <span class="close" onclick="hideElement()">&times;</span>
-                                         <p >Some text in the Modal..</p>
+                                         <span class="close" onclick="hideElement(1)">&times;</span>
+                                         <h3>Pescado Asado, grilled fish, is one of the two types of fish tacos originating from Baja Mexico.
+                                        It's the lesser of the two but is the healthier option. Try it at Siete Mares.</h3>
                              </div>          </div>
                          </div>
                 </div>
                 <div class="col-xs-3">
                         <div class="barbacoa2">
                         <h2 class= "buttontext">Barbacoa</h2>
-                        <button class="myBtn" onclick="displayElement()">Learn More</button>
+                        <button class="myBtn" onclick="displayElement(2)">Learn More</button>
                         <div id="myModal" class="modal">
                                 <div class="modal-content">
-                                        <span class="close" onclick="hideElement()">&times;</span>
-                                        <p >Some text in the Modal..</p>
+                                        <span class="close" onclick="hideElement(2)">&times;</span>
+                                        <h3>Barbacoa. Oh man, so good. Barbacoa just means roasted meat, typically beef or lamb. Potentially my favorite. Very messy.  Barbacoa is the origin of the food known throughout the world as Barbecue. So delicious, usually served with sliced raw radishes a sprinkle of Cotija, a salty cheese like Feta.  Get it at El Trompito.   </h3><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3064.2762056175247!2d-105.00752288416294!3d39.82322457943855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c778c5aa1d19d%3A0x8b7c54ee0202a711!2sEl+Trompito+Taqueria!5e0!3m2!1sen!2sus!4v1513357611582" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></p>
                                       </div>
                             </div>
                             </div>
@@ -65,11 +67,11 @@
                   <div class="col-xs-3">
                     <div class="decabeza2">   
                         <h2 class= "buttontext">De Cabeza</h2>
-                        <button class="myBtn" onclick="displayElement()">Learn More</button>
+                        <button class="myBtn" onclick="displayElement(3)">Learn More</button>
                         <div id="myModal" class="modal">
                                 <div class="modal-content">
-                                        <span class="close" onclick="hideElement()">&times;</span>
-                                        <p >Some text in the Modal..</p>
+                                        <span class="close" onclick="hideElement(3)">&times;</span>
+                                        <p ><h3>Tacos de Cabeza are made from the head of the cow, which is steamed whole until tender. Typically what you get is the cheeks. So good. A good base for hot salsa. Try the cabeza taco at Patzcuaro's. It's right near my house,. Stop by and say hi. </h3><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3067.00853027188!2d-105.02164208416438!3d39.76191687944672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c789061192889%3A0x5153efde0a2332bb!2sPatzcuaro&#39;s+Mexican+Restaurant!5e0!3m2!1sen!2sus!4v1513357819138" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></p>
                                       </div>
                          </div>             
         </div>        </div>
@@ -78,22 +80,22 @@
                 <div class="col-xs-3">
                     <div class ="tripa2">
                      <h2 class= "buttontext">Tripa</h2>
-                     <button class="myBtn" onclick="displayElement()">Learn More</button>
+                     <button class="myBtn" onclick="displayElement(4)">Learn More</button>
                      <div id="myModal" class="modal">
                              <div class="modal-content">
-                                     <span class="close" onclick="hideElement()">&times;</span>
-                                     <p >Some text in the Modal..</p>
+                                     <span class="close" onclick="hideElement(4)">&times;</span>
+                                     <p ><h3>Tripa is tripe - the intestines of the cow. Not my favorite. But very popular. Try them at La Calle.</h3><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3069.255171646401!2d-105.01238148416554!3d39.71144777945336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c7f6b3e9a4e1b%3A0xe4b28bd0b76aeaf0!2sLa+Calle+Taqueria+Y+Carnitas!5e0!3m2!1sen!2sus!4v1513357969810" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></p>
                        </div>    </div>
                        </div>         
                 </div>
                 <div class="col-xs-3">
                     <div class="alpastor2">
                      <h2 class= "buttontext">Al Pastor</h2>
-                     <button class="myBtn" onclick="displayElement()">Learn More</button>
+                     <button class="myBtn" onclick="displayElement(5)">Learn More</button>
                      <div id="myModal" class="modal">
                              <div class="modal-content">
-                                     <span class="close" onclick="hideElement()">&times;</span>
-                                     <p >Some text in the Modal..</p>
+                                     <span class="close" onclick="hideElement(5)">&times;</span>
+                                     <p ><h3>Al Pastor is my favorite. It's marinate dpork that is prepared like gyros, because this taco was created when some Lebanese folks immigrated to Mexico and brought gyros/shawarma cooking. Served with pineapple. SO GOOD.</h3><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3067.9840569099592!2d-104.8870328841648!3d39.74000897944947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c7c8f3decd853%3A0x10fb37abafaa57f9!2sTacos+Acapulco!5e0!3m2!1sen!2sus!4v1513358356408" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> </p>
                              </div>
                       </div>
                       </div>          
@@ -101,10 +103,10 @@
                 <div class="col-xs-3">
                       <div class ="bajafish2">
                         <h2 class ="buttontext">Pescado estilo Baja</h2>
-                        <button class="myBtn" onclick="displayElement()">Learn More</button>
+                        <button class="myBtn" onclick="displayElement(6)">Learn More</button>
                         <div id="myModal" class="modal">
                                 <div class="modal-content">
-                                        <span class="close" onclick="hideElement()">&times;</span>
+                                        <span class="close" onclick="hideElement(6)">&times;</span>
                                         <p >Some text in the Modal..</p>
                         </div>              </div>
                         </div>              
@@ -112,11 +114,11 @@
                 <div class="col-xs-3">
                         <div class="carnitas2">
                         <h2 class = "buttontext">Carnitas</h2>
-                        <button class="myBtn" onclick="displayElement()">Learn More</button>
+                        <button class="myBtn" onclick="displayElement(7)">Learn More</button>
                         <div id="myModal" class="modal">
                                 <div class="modal-content">
-                                        <span class="close" onclick="hideElement()">&times;</span>
-                                        <p >Some text in the Modal..</p>
+                                        <span class="close" onclick="hideElement(7)">&times;</span>
+                                        <p ><h3>Carnitas is my favorite. Pork shoulder that is boiled in pork fat. How can you go wrong? Not a spciy dish so I usually add lots of green salsa. Carnitas California is the spot. </h3><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3069.255171646401!2d-105.01238148416554!3d39.71144777945336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c7f6b3e9a4e1b%3A0xe4b28bd0b76aeaf0!2sLa+Calle+Taqueria+Y+Carnitas!5e0!3m2!1sen!2sus!4v1513357969810" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></p>
                                       </div>
                           </div>            
         </div>                      </div>
@@ -125,11 +127,11 @@
                 <div class="col-xs-3">
                         <div class="chorizoasado2">
                             <h2 class = "buttontext">Chorizo Asado</h2>
-                            <button class="myBtn" onclick="displayElement()">Learn More</button>
+                            <button class="myBtn" onclick="displayElement(8)">Learn More</button>
                             <div id="myModal" class="modal">
                                     <div class="modal-content">
-                                            <span class="close" onclick="hideElement()">&times;</span>
-                                            <p >Some text in the Modal..</p>
+                                            <span class="close" onclick="hideElement(8)">&times;</span>
+                                            <p ><h3>Chroizo asado is grilled chorizo - a different experience of chorizo than when it's in a burrito. If the chorizo is good, the taco will be as well. Should be spicy. Try it at Taco Mex, which is so busy that they have a separate outdoor kitchen out front to keep up. All the tacos are 99 cents. WAAAAT? </h3><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d98246.54075870023!2d-105.06177638662359!3d39.690108021114455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c7c7ccb63eff5%3A0xd76665b2d6937560!2sTACOMEX!5e0!3m2!1sen!2sus!4v1513358667431" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></p>
                                           </div>
                             </div>
                        </div>                   
@@ -137,10 +139,10 @@
                 <div class="col-xs-3">
                         <div class="shrimptaco2">
                         <h2 class = "buttontext"> Camaron Asado</h2>
-                        <button class="myBtn" onclick="displayElement()">Learn More</button>
+                        <button class="myBtn" onclick="displayElement(9)">Learn More</button>
                         <div id="myModal" class="modal">
                                 <div class="modal-content">
-                                        <span class="close" onclick="hideElement()">&times;</span>
+                                        <span class="close" onclick="hideElement(9)">&times;</span>
                                         <p >Some text in the Modal..</p>
                                       </div>
                             </div>
@@ -149,10 +151,10 @@
                 <div class="col-xs-3">
                         <div class="dorados2">
                         <h2 class = "buttontext">Tacos Dorados</h2>
-                        <button class="myBtn" onclick="displayElement()">Learn More</button>
+                        <button class="myBtn" onclick="displayElement(10)">Learn More</button>
                         <div id="myModal" class="modal">
                                 <div class="modal-content">
-                                        <span class="close" onclick="hideElement()">&times;</span>
+                                        <span class="close" onclick="hideElement(10)">&times;</span>
                                         <p >Some text in the Modal..</p>
                                       </div>
                                 </div>
@@ -161,10 +163,10 @@
                 <div class="col-xs-3">
                         <div class="lengua2">
                         <h2 class = "buttontext">Lengua</h2>
-                        <button class="myBtn" onclick="displayElement()">Learn More</button>
+                        <button class="myBtn" onclick="displayElement(11)">Learn More</button>
                         <div id="myModal" class="modal">
                                 <div class="modal-content">
-                                        <span class="close" onclick="hideElement()">&times;</span>
+                                        <span class="close" onclick="hideElement(11)">&times;</span>
                                         <p >Some text in the Modal..</p>
                                       </div>
                         </div>             
@@ -175,10 +177,10 @@
                   <div class="col-xs-3">
                         <div class="chicharron2">
                         <h2 class = "buttontext">Chicharron</h2>
-                        <button class="myBtn" onclick="displayElement()">Learn More</button>
+                        <button class="myBtn" onclick="displayElement(12)">Learn More</button>
                         <div id="myModal" class="modal">
                                 <div class="modal-content">
-                                        <span class="close" onclick="hideElement()">&times;</span>
+                                        <span class="close" onclick="hideElement(12)">&times;</span>
                                         <p >Some text in the Modal..</p>
                                       </div>
                          </div>
@@ -187,10 +189,10 @@
                 <div class="col-xs-3">
                         <div class="sudados2">
                         <h2 class="buttontext">Sudados</h2>
-                        <button class="myBtn" onclick="displayElement()">Learn More</button>
+                        <button class="myBtn" onclick="displayElement(13)">Learn More</button>
                         <div id="myModal" class="modal">
                                 <div class="modal-content">
-                                        <span class="close" onclick="hideElement()">&times;</span>
+                                        <span class="close" onclick="hideElement(13)">&times;</span>
                                         <p >Some text in the Modal..</p>
                                       </div>
                         </div>
@@ -199,10 +201,10 @@
                 <div class="col-xs-3">
                         <div class="polloasado2">
                         <h2 class="buttontext">Pollo Asado</h2>
-                        <button class="myBtn" onclick="displayElement()">Learn More</button>
+                        <button class="myBtn" onclick="displayElement(14)">Learn More</button>
                         <div id="myModal" class="modal">
                                 <div class="modal-content">
-                                        <span class="close" onclick="hideElement()">&times;</span>
+                                        <span class="close" onclick="hideElement(14)">&times;</span>
                                         <p >Some text in the Modal..</p>
                                       </div>
                          </div>
@@ -212,11 +214,11 @@
                     <div class="col-xs-3">
                         <div class="nopales2">
                         <h2 class = "buttontext">Nopales</h2>
-                        <button class="myBtn" onclick="displayElement()">Learn More</button>
+                        <button class="myBtn" onclick="displayElement(15)">Learn More</button>
                         <div id="myModal" class="modal">
                                 <div class="modal-content">
-                                        <span class="close" onclick="hideElement()">&times;</span>
-                                        <p >Some text in the Modal..</p>
+                                        <span class="close" onclick="hideElement(15)">&times;</span>
+                                        <p ><h3>The only vegetarian taco on this list. Unique to northern Mexico,<br> Nopales is a type of cactus. It takes a lot of prep, so maybe<br> not one to make at home. Delicious. Get it at Tarasco's on Feds.</h3><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3069.411637175289!2d-105.02673254894052!3d39.70793090626331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c7f6420ae23e3%3A0x74cc1a4af3009ee2!2sTarasco&#39;s+New+Latino+Cuisine!5e0!3m2!1sen!2sus!4v1513357126251" width="500" height="500" frameborder="0" style="border:0" allowfullscreen></iframe></p>
                                       </div>
                         </div>
                         </div>

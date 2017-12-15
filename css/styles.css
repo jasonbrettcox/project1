@@ -194,87 +194,88 @@ body {
 .alpastor2{
 	background-image: url(/images/alpastor.jpg);
 	background-size: cover;
-	/* height: 37vh; */
+	height: 37vh;
 }
 .bajafish2{
 	background-image: url(/images/bajafish.jpg);
 	background-size: cover;
-	/* height: 37vh; */
+	height: 37vh;
 }
 .chorizoasado2{
 	background-image: url(/images/chorizoasado.jpg);
 	background-size: cover;
-	/* height: 37vh; */
+	height: 37vh;
 }
 .grilledfish2{
 	background-image: url(/images/grilledfish.jpg);
 	background-size: cover;
-	/* height: 37vh; */
+	height: 37vh;
 }
 .tripa2{
 	background-image: url(/images/tripa.jpg);
 	background-size: cover;
-	/* height: 37vh; */
+	height: 37vh;
 }
 .barbacoa2{
 	background-image: url(/images/barbacoa.jpg);
 	background-size: cover;
-	/* height: 37vh; */
+	height: 37vh;
 }
 .carneasada2{
 	background-image: url(/images/carneasada.jpg);
 	background-size: cover;
-	/* height: 37vh; */
+	height: 37vh;
 }
 .carnitas2{
 	background-image: url(/images/carnitas.jpg);
 	background-size: cover;
-	/* height: 37vh; */
+	height: 37vh;
 }
 .shrimptaco2{
 	background-image: url(/images/shrimptaco.jpg);
 	background-size: cover;
-	/* height: 37vh; */
+	height: 37vh;
 }
 .decabeza2{
 	background-image: url(/images/decabeza.jpg);
 	background-size: cover;
-	/* height: 37vh; */
+	height: 37vh;
 }
 .dorados2{
 	background-image: url(/images/dorados.jpg);
 	background-size: cover;
-	/* height: 37vh; */
+	height: 37vh;
 }
 .lengua2{
 	background-image: url(/images/lengua.jpg);
 	background-size: cover;
-	/* height: 37vh; */
+	height: 37vh;
 }
 .chicharron2{
 	background-image: url(/images/chicharron.jpg);
 	background-size: cover;
-	/* height: 37vh; */
+	height: 37vh;
 }
 .sudados2{
 	background-image: url(/images/sudados.jpg);
 	background-size: cover;
-	/* height: 37vh; */
+	height: 37vh;
 }
 .polloasado2{
 	background-image: url(/images/polloasado.jpg);
 	background-size: cover;
-	/* height: 37vh; */
+	height: 37vh;
 }
 .nopales2{
 	background-image: url(/images/nopales.jpg);
 	background-size: cover;
-	/* height: 37vh; */
+	height: 37vh;
 }
-.container2{
+.container{
 	background-image: url(/images/taco-background.png);
 	no-repeat center center fixed;
 }
+/* win page bootstrap stuff starts here */
 .jumbotron{
 	background-size: cover;
 	font-family: 'Bangers', cursive;
@@ -300,32 +301,33 @@ h2{
 	font-family: 'Bangers', cursive;
 }
 .myBtn{
-	padding-top: 100px;
+	width: 50px;
+	height: 100px;
 	font-family: 'Bangers', cursive;
 	position: relative;
 	
 }
 /* modal stuff here */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgb(0,0,0); 
+	background-color: rgba(0,0,0,0.4); 
 	font-family: 'Bangers', cursive;
 }
 
 .modal-content {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 15% auto; 
     padding: 20px;
     border: 1px solid #888;
-	width: 80%; /* Could be more or less, depending on screen size */
+	width: 80%; 
 	font-family: 'Bangers', cursive;
 }
 .myBtn{

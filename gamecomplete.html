@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="modal.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
@@ -14,113 +15,210 @@
 </head>
 <body>
     <div class = "jumbotron">
-        <h1> You Won! Now go get some tacos, fool!</h1>
-        <p> <h2>Click below to learn what each is and where you can get it.</h2></p>
+        <h1> You Won! Now go get some tacos, noob.</h1>
+        <p> <h2>Click below to learn what a taco actually is and where you can get some.</h2></p>
+        <p><h4> Thank you for not driving when it's snowing.</h4></p>
     </div>
     <div class= "container">
         <div class="row" >
                 <div class="col-xs-3">
-                        <div class="carneasada">
+                        <div class="carneasada2">
                         <h2 class= "buttontext"> Carne Asada</h2>
-                        <button class="myBtn">Learn More</button>
+                        <button class="myBtn" onclick="displayElement()">Learn More</button>
+                        <div id="myModal1" class="modal">
+                                <div class="modal-content">
+                                        <span class="close" onclick="hideElement()">&times;</span>
+                                        <h3>Carne Asada is a damn fine taco. Marinated skirt steak, typically, but sdometimes flank.
+                                            The steak should be seared a bit. Usually served topped with gucacomole, cilantro, and onions. 
+                                            Try the carne asada taco at Tacos Rapidos, which is open 24 hours. </h3>
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49106.308138814034!2d-105.00604002726743!3d39.71394061110346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c7f697de3a3c1%3A0x5e7c4e8c7654cf61!2sTacos+Rapidos!5e0!3m2!1sen!2sus!4v1513310908527" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+                                            </p>
+                                        </p>
+                                      </div>
+                        </div>
                         </div>
                 </div>
                 <div class="col-xs-3">
-                        <div class="grilledfish">
+                        <div class="grilledfish2">
                          <h2 class= "buttontext">Pescado Asado</h2>
-                        <button class="myBtn">Learn More</button>
-                        </div>
+                         <button class="myBtn" onclick="displayElement()">Learn More</button>
+                         <div id="myModal2" class="modal">
+                                 <div class="modal-content">
+                                         <span class="close" onclick="hideElement()">&times;</span>
+                                         <p >Some text in the Modal..</p>
+                             </div>          </div>
+                         </div>
                 </div>
                 <div class="col-xs-3">
-                        <div class="barbacoa">
+                        <div class="barbacoa2">
                         <h2 class= "buttontext">Barbacoa</h2>
-                        <button class="myBtn">Learn More</button>
-                        </div>
+                        <button class="myBtn" onclick="displayElement()">Learn More</button>
+                        <div id="myModal" class="modal">
+                                <div class="modal-content">
+                                        <span class="close" onclick="hideElement()">&times;</span>
+                                        <p >Some text in the Modal..</p>
+                                      </div>
+                            </div>
+                            </div>
                  </div>
                   <div class="col-xs-3">
-                    <div class="decabeza">   
+                    <div class="decabeza2">   
                         <h2 class= "buttontext">De Cabeza</h2>
-                        <button class="myBtn">Learn More</button>
-                    </div>
+                        <button class="myBtn" onclick="displayElement()">Learn More</button>
+                        <div id="myModal" class="modal">
+                                <div class="modal-content">
+                                        <span class="close" onclick="hideElement()">&times;</span>
+                                        <p >Some text in the Modal..</p>
+                                      </div>
+                         </div>             
                 </div>
         </div>
         <div class="row">
                 <div class="col-xs-3">
-                    <div class ="tripa">
+                    <div class ="tripa2">
                      <h2 class= "buttontext">Tripa</h2>
-                        <button class="myBtn">Learn More</button>
-                    </div>
+                     <button class="myBtn" onclick="displayElement()">Learn More</button>
+                     <div id="myModal" class="modal">
+                             <div class="modal-content">
+                                     <span class="close" onclick="hideElement()">&times;</span>
+                                     <p >Some text in the Modal..</p>
+                       </div>    </div>
+                       </div>         
                 </div>
                 <div class="col-xs-3">
-                    <div class="alpastor">
+                    <div class="alpastor2">
                      <h2 class= "buttontext">Al Pastor</h2>
-                        <button class="myBtn">Learn More</button>
-                    </div>
+                     <button class="myBtn" onclick="displayElement()">Learn More</button>
+                     <div id="myModal" class="modal">
+                             <div class="modal-content">
+                                     <span class="close" onclick="hideElement()">&times;</span>
+                                     <p >Some text in the Modal..</p>
+                             </div>
+                      </div>
+                      </div>          
                 </div>
                 <div class="col-xs-3">
-                      <div class ="bajafish">
+                      <div class ="bajafish2">
                         <h2 class ="buttontext">Pescado estilo Baja</h2>
-                        <button class="myBtn">Learn More</button>
-                        </div>
+                        <button class="myBtn" onclick="displayElement()">Learn More</button>
+                        <div id="myModal" class="modal">
+                                <div class="modal-content">
+                                        <span class="close" onclick="hideElement()">&times;</span>
+                                        <p >Some text in the Modal..</p>
+                        </div>              </div>
+                        </div>              
                 </div>
                 <div class="col-xs-3">
-                        <div class="carnitas">
+                        <div class="carnitas2">
                         <h2 class = "buttontext">Carnitas</h2>
-                        <button class="myBtn">Learn More</button>
-                        </div>
+                        <button class="myBtn" onclick="displayElement()">Learn More</button>
+                        <div id="myModal" class="modal">
+                                <div class="modal-content">
+                                        <span class="close" onclick="hideElement()">&times;</span>
+                                        <p >Some text in the Modal..</p>
+                                      </div>
+                          </div>            
                 </div>
         </div>
         <div class="row">
                 <div class="col-xs-3">
-                        <div class="chorizoasado">
+                        <div class="chorizoasado2">
                             <h2 class = "buttontext">Chorizo Asado</h2>
-                            <button class="myBtn">Learn More</button>
-                        </div>
+                            <button class="myBtn" onclick="displayElement()">Learn More</button>
+                            <div id="myModal" class="modal">
+                                    <div class="modal-content">
+                                            <span class="close" onclick="hideElement()">&times;</span>
+                                            <p >Some text in the Modal..</p>
+                                          </div>
+                            </div>
+                       </div>                   
                 </div>
                 <div class="col-xs-3">
-                        <div class="shrimptaco">
+                        <div class="shrimptaco2">
                         <h2 class = "buttontext"> Camaron Asado</h2>
-                        <button class="myBtn">Learn More</button>
-                        </div>
+                        <button class="myBtn" onclick="displayElement()">Learn More</button>
+                        <div id="myModal" class="modal">
+                                <div class="modal-content">
+                                        <span class="close" onclick="hideElement()">&times;</span>
+                                        <p >Some text in the Modal..</p>
+                                      </div>
+                            </div>
+                        </div>              
                 </div>
                 <div class="col-xs-3">
-                        <div class="dorados">
+                        <div class="dorados2">
                         <h2 class = "buttontext">Tacos Dorados</h2>
-                        <button class="myBtn">Learn More</button>
-                        </div>
+                        <button class="myBtn" onclick="displayElement()">Learn More</button>
+                        <div id="myModal" class="modal">
+                                <div class="modal-content">
+                                        <span class="close" onclick="hideElement()">&times;</span>
+                                        <p >Some text in the Modal..</p>
+                                      </div>
+                                </div>
+                        </div>              
                 </div>
                 <div class="col-xs-3">
-                        <div class="lengua">
+                        <div class="lengua2">
                         <h2 class = "buttontext">Lengua</h2>
-                        <button class="myBtn">Learn More</button>
-                        </div>
+                        <button class="myBtn" onclick="displayElement()">Learn More</button>
+                        <div id="myModal" class="modal">
+                                <div class="modal-content">
+                                        <span class="close" onclick="hideElement()">&times;</span>
+                                        <p >Some text in the Modal..</p>
+                                      </div>
+                        </div>             
                   </div>
                 </div>
         <div class="row">
                   <div class="col-xs-3">
-                        <div class="chicharron">
+                        <div class="chicharron2">
                         <h2 class = "buttontext">Chicharron</h2>
-                        <button class="myBtn">Learn More</button>
-                        </div>
+                        <button class="myBtn" onclick="displayElement()">Learn More</button>
+                        <div id="myModal" class="modal">
+                                <div class="modal-content">
+                                        <span class="close" onclick="hideElement()">&times;</span>
+                                        <p >Some text in the Modal..</p>
+                                      </div>
+                         </div>
+                         </div>             
                 </div>
                 <div class="col-xs-3">
-                        <div class="sudados">
+                        <div class="sudados2">
                         <h2 class="buttontext">Sudados</h2>
-                        <button class="myBtn">Learn More</button>
+                        <button class="myBtn" onclick="displayElement()">Learn More</button>
+                        <div id="myModal" class="modal">
+                                <div class="modal-content">
+                                        <span class="close" onclick="hideElement()">&times;</span>
+                                        <p >Some text in the Modal..</p>
+                                      </div>
                         </div>
+                        </div>      
                 </div>
                 <div class="col-xs-3">
-                        <div class="polloasado">
+                        <div class="polloasado2">
                         <h2 class="buttontext">Pollo Asado</h2>
-                        <button class="myBtn">Learn More</button>
-                        </div>
+                        <button class="myBtn" onclick="displayElement()">Learn More</button>
+                        <div id="myModal" class="modal">
+                                <div class="modal-content">
+                                        <span class="close" onclick="hideElement()">&times;</span>
+                                        <p >Some text in the Modal..</p>
+                                      </div>
+                         </div>
+                         </div>             
                 </div>
                 
                     <div class="col-xs-3">
-                        <div class="nopales">
+                        <div class="nopales2">
                         <h2 class = "buttontext">Nopales</h2>
-                        <button class="myBtn">Learn More</button>
-                    </div>
+                        <button class="myBtn" onclick="displayElement()">Learn More</button>
+                        <div id="myModal" class="modal">
+                                <div class="modal-content">
+                                        <span class="close" onclick="hideElement()">&times;</span>
+                                        <p >Some text in the Modal..</p>
+                                      </div>
+                        </div>
+                        </div>
                 
                   </div>
                 </div>
@@ -131,6 +229,6 @@
 
 
     </div>
-    <script src="js/modal.js"></script>
+    
 </body>
 </html>

@@ -146,7 +146,7 @@ body {
 }
 /* the back of the cards */
 .front {
-	background: url(/images/richguytaco.png) no-repeat; 
+	background: url(../images/richguytaco.png) no-repeat; 
 	background-size: contain;
 	z-index: 10;
 }

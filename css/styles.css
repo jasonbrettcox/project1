@@ -340,8 +340,10 @@ h2{
 .myBtn{
 	text-align: center;
 	position: relative;
-	top: 100px;
-
+	top: 150px;
+	height: 75px;
+	width: 75px;
+	font-size: 20px;
 }
 
 /* closes the modal: */

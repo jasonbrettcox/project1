@@ -5,7 +5,7 @@
 
 body {
 	text-align: center;
-	background: url(/images/taco-background.png);
+	background: url(images/taco-background.png);
 	color: #fff;
 	font-family: 'Bangers', cursive;	
 }
@@ -85,7 +85,7 @@ body {
 }
 
 #gameIntro {
-	background:url(/images/taco-background.png) top left no-repeat contain;
+	background:url(images/taco-background.png) top left no-repeat contain;
 	padding: 80px 0;
 	text-align: center;
 	height: 330px;
@@ -146,14 +146,14 @@ body {
 }
 /* the back of the cards */
 .front {
-	background: url(/images/richguytaco.png) no-repeat; 
+	background: url(images/richguytaco.png) no-repeat; 
 	background-size: contain;
 	z-index: 10;
 }
 /* the front of the cards , yes i know this is backwards */
 .back {
 	
-	background-image: url(/images/polloasado.jpg);  /* what the fuck is this doing here */ 
+	background-image: url(images/polloasado.jpg);  /* what the fuck is this doing here */ 
 	background-size: cover;
 	-webkit-transform: rotate3d(0,1,0,-180deg);
 	z-index: 8;
@@ -173,113 +173,113 @@ body {
 	opacity: 0;
 }
 /* the images applied to the back of the cards : */
-.grilledfish {background-image: url(/images/grilledfish.jpg); background-size: cover;}
-.barbacoa {background-image:url(/images/barbacoa.jpg);background-size: cover;} 
-.tripa {background-image:url(/images/tripa.jpg);background-size: cover;}
-.bajafish {background-image:url(/images/bajafish.jpg);background-size: cover;}
-.carneasada {background-image:url(/images/carneasada.jpg);background-size: cover;}
-.carnitas {background-image:url(/images/carnitas.jpg);background-size: cover;}
-.chorizoasado {background-image:url(/images/chorizoasado.jpg);background-size: cover;}
-.shrimptaco {background-image:url(/images/shrimptaco.jpg);background-size: cover;}
-.decabeza {background-image:url(/images/decabeza.jpg);background-size: cover;}
-.alpastor {background-image:url(/images/alpastor.jpg);background-size: cover;}
-.dorados {background-image:url(/images/dorados.jpg);background-size: cover;}
-.lengua {background-image:url(/images/lengua.jpg);background-size: cover;}
-.chicharron {background-image:url(/images/chicharron.jpg);background-size: cover;}
-.sudados {background-image:url(/images/sudados.jpg);background-size: cover;}
-.polloasado {background-image:url(/images/polloasado.jpg);background-size: cover;}
-.nopales {background-image:url(/images/nopales.jpg);background-size: cover;}
+.grilledfish {background-image: url(images/grilledfish.jpg); background-size: cover;}
+.barbacoa {background-image:url(images/barbacoa.jpg);background-size: cover;} 
+.tripa {background-image:url(images/tripa.jpg);background-size: cover;}
+.bajafish {background-image:url(images/bajafish.jpg);background-size: cover;}
+.carneasada {background-image:url(images/carneasada.jpg);background-size: cover;}
+.carnitas {background-image:url(images/carnitas.jpg);background-size: cover;}
+.chorizoasado {background-image:url(images/chorizoasado.jpg);background-size: cover;}
+.shrimptaco {background-image:url(images/shrimptaco.jpg);background-size: cover;}
+.decabeza {background-image:url(images/decabeza.jpg);background-size: cover;}
+.alpastor {background-image:url(images/alpastor.jpg);background-size: cover;}
+.dorados {background-image:url(images/dorados.jpg);background-size: cover;}
+.lengua {background-image:url(images/lengua.jpg);background-size: cover;}
+.chicharron {background-image:url(images/chicharron.jpg);background-size: cover;}
+.sudados {background-image:url(images/sudados.jpg);background-size: cover;}
+.polloasado {background-image:url(images/polloasado.jpg);background-size: cover;}
+.nopales {background-image:url(images/nopales.jpg);background-size: cover;}
 
 /* the images for the win page */
 .alpastor2{
-	background-image: url(/images/alpastor.jpg);
+	background-image: url(images/alpastor.jpg);
 	background-size: cover;
 	height: 37vh;
 }
 .bajafish2{
-	background-image: url(/images/bajafish.jpg);
+	background-image: url(images/bajafish.jpg);
 	background-size: cover;
 	height: 37vh;
 }
 .chorizoasado2{
-	background-image: url(/images/chorizoasado.jpg);
+	background-image: url(images/chorizoasado.jpg);
 	background-size: cover;
 	height: 37vh;
 }
 .grilledfish2{
-	background-image: url(/images/grilledfish.jpg);
+	background-image: url(images/grilledfish.jpg);
 	background-size: cover;
 	height: 37vh;
 }
 .tripa2{
-	background-image: url(/images/tripa.jpg);
+	background-image: url(images/tripa.jpg);
 	background-size: cover;
 	height: 37vh;
 }
 .barbacoa2{
-	background-image: url(/images/barbacoa.jpg);
+	background-image: url(images/barbacoa.jpg);
 	background-size: cover;
 	height: 37vh;
 }
 .carneasada2{
-	background-image: url(/images/carneasada.jpg);
+	background-image: url(images/carneasada.jpg);
 	background-size: cover;
 	height: 37vh;
 }
 .carnitas2{
-	background-image: url(/images/carnitas.jpg);
+	background-image: url(images/carnitas.jpg);
 	background-size: cover;
 	height: 37vh;
 }
 .shrimptaco2{
-	background-image: url(/images/shrimptaco.jpg);
+	background-image: url(images/shrimptaco.jpg);
 	background-size: cover;
 	height: 37vh;
 }
 .decabeza2{
-	background-image: url(/images/decabeza.jpg);
+	background-image: url(images/decabeza.jpg);
 	background-size: cover;
 	height: 37vh;
 }
 .dorados2{
-	background-image: url(/images/dorados.jpg);
+	background-image: url(images/dorados.jpg);
 	background-size: cover;
 	height: 37vh;
 }
 .lengua2{
-	background-image: url(/images/lengua.jpg);
+	background-image: url(images/lengua.jpg);
 	background-size: cover;
 	height: 37vh;
 }
 .chicharron2{
-	background-image: url(/images/chicharron.jpg);
+	background-image: url(images/chicharron.jpg);
 	background-size: cover;
 	height: 37vh;
 }
 .sudados2{
-	background-image: url(/images/sudados.jpg);
+	background-image: url(images/sudados.jpg);
 	background-size: cover;
 	height: 37vh;
 }
 .polloasado2{
-	background-image: url(/images/polloasado.jpg);
+	background-image: url(images/polloasado.jpg);
 	background-size: cover;
 	height: 37vh;
 }
 .nopales2{
-	background-image: url(/images/nopales.jpg);
+	background-image: url(images/nopales.jpg);
 	background-size: cover;
 	height: 37vh;
 }
 .container{
-	background-image: url(/images/taco-background.png);
+	background-image: url(images/taco-background.png);
 	no-repeat center center fixed;
 }
 /* win page bootstrap stuff starts here */
 .jumbotron{
 	background-size: cover;
 	font-family: 'Bangers', cursive;
-	background-image: url(/images/taco-header.jpg);
+	background-image: url(images/taco-header.jpg);
 }
 .row{
 	height: 400px;

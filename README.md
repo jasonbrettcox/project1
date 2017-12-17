@@ -9,6 +9,12 @@ INSTALLATION INSTRUCTIONS
 
 This is a browser game - no installation is required.
 
+GITHUB REPO: https://github.com/jasonbrettcox/project1
+
+GITHUB PAGE: https://jasonbrettcox.github.io/project1/
+
+
+
 TECHNOLOGIES USED
 
 This game is built in HTML, CSS, bootstrap, and JS/jquery.  The game function and logic is based on CSS and Jquery and HTML. The win page and subsequent modals are built in Bootsdtrap and vanilla JS. I realize this is a weird combo but it was my first attempt these two technologies and I didn't know until I was too far into it that Bootstrap's modal plugin exists. My approach was to learn to use Bootstrap , which I did get to play around with. I also was able to increase my understanding of CSS. I also wanted to include Google Maps api which I sorta did, via iframes. So not really what I wanted to do there. But I was able to build modals, which is new for me. 

@@ -45,7 +45,8 @@ function startGame(){
         if (playGame == false) {
             playGame = true;
                 var playDeck = matchingGame.deck.sort(shuffle);
-                var shuffledNewDeck = getFirstTwelve(playDeck);
+                console.log(playDeck)
+                getFirstTwelve(playDeck);
                 for (var i=0; i<23; i++){
                     $(".card:first-child").clone().appendTo("#cards");
                     console.log ($(".card:first-child"));
@@ -76,13 +77,27 @@ function shuffle() {
     return 0.5 - Math.random();
 }
 
-    function getFirstTwelve() {
-    var firstTwelve = playDeck.slice(0,1,2,3,4,5,6,7,8,9,10,11);
-        newDeck = firstTwelve.push;
-        while (newDeck.length <24) {
-            firstTwelve.push;
+function getFirstTwelve(playDeck) {
+    // Takes first 12 values from playDeck array and inserts them in a new array called firstTwelve
+    var firstTwelve = playDeck.slice(0,12);
+    // Creates an empty array into which each of the values inside firstTwelve will be pushed twice below
+    var doubleFirstTwelve = [];
+    // Creates a counter variable to keep track of the iterations through the while loop below
+    var j = 0;
+    // Initiates a while loop that will only loop twice
+    while( j < 2 ) {
+        // Initiates for loop that will iterate through the length of the firstTwelve array. It will run through this for loop twice since it's inside a while loop that will run twice
+        for(var i = 0; i < firstTwelve.length; i++) {
+           // Pushes each value of the firstTwelve array into the doubleFirstTwelve array. it will do this twice because it's inside the while loop
+           doubleFirstTwelve.push(firstTwelve[i])
+        }
+        // Increments the j counter so that the while loop will no loger execute once j equals 2
+        j++;
     }
+    // doubleFirstTwelve now has 24 values, but it's just an ordered list of 12 values twice in that order, so we want to call your shuffle function again on this new array and return that shuffled doubleFirstTwelve array back to the shuffledNewDeck variable inside startGame
+    return doubleFirstTwelve.sort(shuffle);
 }
+
 
 
 

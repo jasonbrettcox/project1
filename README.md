@@ -13,6 +13,8 @@ GITHUB REPO: https://github.com/jasonbrettcox/project1
 
 GITHUB PAGE: https://jasonbrettcox.github.io/project1/
 
+TRELLO: https://trello.com/b/l46bs78i/tacotown
+
 
 
 TECHNOLOGIES USED

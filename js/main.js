@@ -44,7 +44,8 @@ function startGame(){
         cardsmatched= 0;
         if (playGame == false) {
             playGame = true;
-                matchingGame.deck.sort(shuffle);
+                var playDeck = matchingGame.deck.sort(shuffle);
+                var shuffledNewDeck = getFirstTwelve(playDeck);
                 for (var i=0; i<23; i++){
                     $(".card:first-child").clone().appendTo("#cards");
                     console.log ($(".card:first-child"));
@@ -74,6 +75,16 @@ function startGame(){
 function shuffle() {
     return 0.5 - Math.random();
 }
+
+    function getFirstTwelve() {
+    var firstTwelve = playDeck.slice(0,1,2,3,4,5,6,7,8,9,10,11);
+        newDeck = firstTwelve.push;
+        while (newDeck.length <24) {
+            firstTwelve.push;
+    }
+}
+
+
 
 function selectCard(){
     if($(".card-flipped").size() > 1) {
@@ -124,7 +135,7 @@ function reStartGame(){
         playGame = false;
         uiCards.html("<div class='card'><div class='face front'></div><div class='face back'></div></div>");
         clearTimeout(scoreTimeout);
-        matchingGame.deck = ['nopales', 'nopales', 'grilledfish', 'grilledfish','tripa', 'tripa','bajafish', 'bajafish', 'barbacoa', 'barbacoa','carneasada','carneasada','carnitas', 'carnitas', 'chorizoasado','chorizoasado','shrimptaco','shrimptaco','decabeza','decabeza','alpastor', 'alpastor','dorados','dorados', 'lengua','lengua','chicharron','chicharron','sudados','sudados', 'polloasado','polloasado',];
+        matchingGame.deck = ['nopales', 'nopales', 'grilledfish', 'grilledfish','tripa', 'tripa','bajafish', 'bajafish',  'barbacoa', 'barbacoa','carneasada','carneasada','carnitas', 'carnitas', 'chorizoasado','chorizoasado','shrimptaco','shrimptaco','decabeza','decabeza','alpastor', 'alpastor','dorados','dorados', 'lengua','lengua','chicharron','chicharron','sudados','sudados', 'polloasado','polloasado',];
         startGame();
 }
 

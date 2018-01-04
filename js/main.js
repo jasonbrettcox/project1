@@ -11,7 +11,7 @@ var uiPlay = $("#gamePlay");
 var uiTimer = $("#timer");
 
 var matchingGame = {};
-matchingGame.deck = ['nopales', 'nopales','grilledfish', 'grilledfish','tripa', 'tripa','bajafish', 'bajafish','barbacoa', 'barbacoa','carneasada', 'carneasada','carnitas', 'carnitas', 'chorizoasado','chorizoasado','shrimptaco','shrimptaco','decabeza','decabeza','alpastor', 'alpastor','dorados','dorados', 'lengua','lengua','chicharron','chicharron','sudados','sudados', 'polloasado','polloasado',];
+matchingGame.deck = ['nopales', 'grilledfish','tripa','bajafish','barbacoa','carneasada','carnitas', 'chorizoasado','shrimptaco', 'decabeza','alpastor','dorados', 'lengua','chicharron','sudados', 'polloasado',];
 
 $(function(){
     init();
@@ -35,48 +35,6 @@ function init() {
             });
 }
 
-function startGame(){
-        uiTimer.show();
-        uiScore.html("0 seconds");
-        uiStats.show();
-        uiCards.show();
-        score = 0;
-        cardsmatched= 0;
-        if (playGame == false) {
-            playGame = true;
-                var playDeck = matchingGame.deck.sort(shuffle);
-                console.log(playDeck)
-                getFirstTwelve(playDeck);
-                for (var i=0; i<23; i++){
-                    $(".card:first-child").clone().appendTo("#cards");
-                    console.log ($(".card:first-child"));
-                } 
-                uiCards.children().each(function(index) {
-                    $(this).css({
-                        "left" : ($(this).width() + 20) * (index % 6),
-                        "top" : ($(this).height() + 20) * Math.floor(index / 6)
-                    });
-                    var pattern = matchingGame.deck.pop();
-                    $(this).find(".back").addClass(pattern);
-                    $(this).attr("data-pattern",pattern);
-                    $(this).click(selectCard);
-                });
-            timer();
-        };
-}
- function timer(){
-     if (playGame){
-         scoreTimeout = setTimeout(function(){
-             uiScore.html(++score, "seconds");
-             timer();
-         }, 1000);
-     };
- };
-
-function shuffle() {
-    return 0.5 - Math.random();
-}
-
 function getFirstTwelve(playDeck) {
     // Takes first 12 values from playDeck array and inserts them in a new array called firstTwelve
     var firstTwelve = playDeck.slice(0,12);
@@ -98,6 +56,47 @@ function getFirstTwelve(playDeck) {
     return doubleFirstTwelve.sort(shuffle);
 }
 
+function startGame(){
+        uiTimer.show();
+        uiScore.html("0 seconds");
+        uiStats.show();
+        uiCards.show();
+        score = 0;
+        cardsmatched= 0;
+        if (playGame == false) {
+            playGame = true;
+                var playDeck = matchingGame.deck.sort(shuffle);
+                console.log(playDeck)
+                var shuffledDeck = getFirstTwelve(playDeck);
+                for (var i=0; i<23; i++){
+                    $(".card:first-child").clone().appendTo("#cards");
+                    console.log ($(".card:first-child"));
+                } 
+                uiCards.children().each(function(index) {
+                    $(this).css({
+                        "left" : ($(this).width() + 20) * (index % 6),
+                        "top" : ($(this).height() + 20) * Math.floor(index / 6)
+                    });
+                    var pattern = shuffledDeck.pop();
+                    $(this).find(".back").addClass(pattern);
+                    $(this).attr("data-pattern",pattern);
+                    $(this).click(selectCard);
+                });
+            timer();
+        };
+}
+ function timer(){
+     if (playGame){
+         scoreTimeout = setTimeout(function(){
+             uiScore.html(++score, "seconds");
+             timer();
+         }, 1000);
+     };
+ };
+
+function shuffle() {
+    return 0.5 - Math.random();
+}
 
 
 
@@ -150,7 +149,7 @@ function reStartGame(){
         playGame = false;
         uiCards.html("<div class='card'><div class='face front'></div><div class='face back'></div></div>");
         clearTimeout(scoreTimeout);
-        matchingGame.deck = ['nopales', 'nopales', 'grilledfish', 'grilledfish','tripa', 'tripa','bajafish', 'bajafish',  'barbacoa', 'barbacoa','carneasada','carneasada','carnitas', 'carnitas', 'chorizoasado','chorizoasado','shrimptaco','shrimptaco','decabeza','decabeza','alpastor', 'alpastor','dorados','dorados', 'lengua','lengua','chicharron','chicharron','sudados','sudados', 'polloasado','polloasado',];
+        matchingGame.deck = ['nopales', 'grilledfish','tripa','bajafish','barbacoa','carneasada','carnitas', 'chorizoasado','shrimptaco', 'decabeza','alpastor','dorados', 'lengua','chicharron','sudados', 'polloasado',];
         startGame();
 }
 
